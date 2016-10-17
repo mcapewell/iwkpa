@@ -1,0 +1,60 @@
+body {
+    padding: 70px 0 25px 0;
+}
+
+body#home {
+    padding-top: 0;
+}
+
+.navbar-default {
+    background-color: rgb(44, 62, 80);
+    border-color: transparent;
+    -webkit-transition: background-color .3s ease-in;
+    transition: background-color .3s ease-in;
+}
+
+.navbar-transparent {
+    background-color: rgba(44, 62, 80, 0.3);
+    -webkit-transition: background-color .3s ease-in;
+    transition: background-color .3s ease-in;
+}
+
+.navbar-brand > img {
+    display: inline;
+    padding-right: 10px;
+    opacity: 0.7;
+}
+
+.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-default .navbar-brand:hover > img, .navbar-default .navbar-brand:focus > img {
+    opacity: 1;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.splash {
+    background-image: url(header.jpg);
+    background-size: cover;
+    height: 450px;
+    margin-bottom: 20px;
+}
