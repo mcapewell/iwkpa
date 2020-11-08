@@ -1,0 +1,28 @@
+{
+  "name": "iwkpa",
+  "version": "1.0.0",
+  "description": "Website of the Isle of Wight Kidney Patients Association charity.",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/styles.css -o build/styles.css",
+    "watch": "postcss css/styles.css -o build/styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcapewell/iwkpa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcapewell/iwkpa/issues"
+  },
+  "homepage": "https://github.com/mcapewell/iwkpa#readme",
+  "dependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8.1.6",
+    "postcss-cli": "^8.2.0",
+    "tailwindcss": "^1.9.6"
+  }
+}
