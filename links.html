@@ -1,109 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Isle of Wight Kidney Patients Association</title>
-
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        
-        <link rel="stylesheet" href="custom.css">
-    </head>
-    <body>
-        <div class="container">
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button class="navbar-toggle collapsed" aria-expanded="false" aria-controls="navbar" type="button" data-toggle="collapse" data-target="#navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html">
-                            <img src="outline.png" />
-                            <span class="visible-xs-inline">IWKPA</span>
-                            <span class="hidden-xs">Isle of Wight Kidney Patients Association</span>
-                        </a>
-                    </div>
-                    <div class="navbar-collapse collapse" id="navbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="active"><a href="links.html">Info</a></li>
-                            <li><a href="news.html">Blog</a></li>
-                            <li><a href="donation.html">Fundraising</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Isle of Wight Kidney Patients Association</title>
+    <link rel="stylesheet" href="build/styles.css">
+</head>
+<body class="antialiased text-gray-900">
+    <div class="h-1 bg-gradient-to-r from-teal-700 via-indigo-700 to-pink-700"></div>
+    <header class="py-5 bg-blue-900">
+        <div class="flex justify-between items-center">
+        <div class="flex-shrink-0 ml-5 md:ml-10">
+            <a href="/">
+                <img class="h-8 w-auto" src="logos/logo.svg" alt="Isle of Wight Kidney Patients Association logo">
+            </a>
         </div>
+        <button id='hamburgerBtn' class="visible md:invisible inline-flex items-center justify-center mr-5 md:mr-0 text-gray-500 hover:text-gray-300 transition duration-150 ease-in-out" aria-label="Main menu" aria-expanded="false">
+            <svg id="hamburgerSvg" class="block h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="closeSvg" class="hidden h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <ul class="hidden md:flex overflow-x-hidden mr-10 text-gray-500">
+            <li class="mr-6 p-1">
+                <a class="hover:text-gray-300" href="index.html">Home</a>
+            </li>
+            <li class="mr-6 p-1 border-b-2 border-teal-500">
+                <a class="text-gray-300 cursor-default" href="links.html">Info</a>
+            </li>
+            <li class="mr-6 p-1">
+                <a class="hover:text-gray-300" href="news.html">Blog</a>
+            </li>
+            <li class="p-1">
+                <a class="hover:text-gray-300" href="donation.html">Fundraising</a>
+            </li>
+        </ul>
+        </div>
+        <ul id="mobileMenu" class="hidden md:hidden mt-4 ml-5 text-gray-500">
+            <li class="p-1">
+                <a class="block  hover:text-gray-300" href="index.html">Home</a>
+            </li>
+            <li class="mt-1 p-1">
+                <a class="block text-gray-300" href="links.html">Info</a>
+            </li>
+            <li class="mt-1 p-1">
+                <a class="block hover:text-gray-300" href="news.html">Blog</a>
+            </li>
+            <li class="mt-1 p-1">
+                <a class="block hover:text-gray-300" href="donation.html">Fundraising</a>
+            </li>
+        </ul>
+    </header>
 
-        <div class="container">
-            
-            <div class="row" style="margin-top: 3rem;">
-                <div class="col-sm-3">
-                    <div class="list-group">
-                        <a href="#benfits" class="list-group-item active">Benfits</a>
-                        <a href="#visit" class="list-group-item">Visiting the Isle of Wight</a>
-                        <a href="#links" class="list-group-item">Useful Links</a>
-                    </div>
-                </div>
-                <div class="col-sm-8 col-lg-offset-1">
-                    <h2 style="margin-top: 0;">Information for Patients and Carers</h2>
-                    <h3 id="benfits">Benfits</h3>
-                    <p>Under 60 years:-</p>
-                    <p>Employment Support Allowance -  Means tested.</p>
-                    <p>Tel number 0345 6088573</p>
-                    <hr/>
-                    <p>Personal Independence Payment, Mobility and Daily Living allowance. Not means tested.</p>
-                    <p>Tel Number - 0800 9172222</p>
-                    <hr/>
-                    <p>Over 60 years</p>
-                    <p>Pension Credit - Means tested.</p>
-                    <p>Tel number - 0845 6060265</p>
-                    <hr/>
-                    <p>Attendance Allowance = For people aged over 65 years. Not means tested.</p>
-                    <p>Only daily living allowance available</p>
-                    <p>Tel number - 0345 6056055</p>
-                    <hr/>
-                    <p> If on Pension Guarantee Credit - Full Housing and Council tax benefit applies.</p>
-                    <hr/>
-                    <p>Carers Allowance - Means tested.  Possibility to get an underlying entitlement to a Carers Premium.</p>
-                    <p>Tel: 0345 6084321</p>
-                    
-                    <h3 id="visit" style="margin-top: 4rem;">Visiting the Isle of Wight</h3>
-                    <p>The thought of going on holiday when you need dialysis can be a daunting experience.</p>
-                    <p>Here on the beautiful Isle of Wight, the team at the Isle of Wight Dialysis Unit will try to make the process as easy as possible.</p>
-                    <p>Based at St Mary's Hospital Newport, the Isle of Wight Dialysis Unit is part of the Wessex Kidney Centre (based at Portsmouth Hospitals NHS Trust).</p>
-                    <p>If you've been stable on dialysis for over six months and are fit to travel, please give the holiday coordinator a call on 01983 821314 between 0900 and 1500, Monday to Friday.</p>
-                    <p>It's worth remembering that the Isle of Wight Dialysis Unit is a small, friendly unit in one of the UK's most popular holiday destinations. As such, there is limited availability for holiday dialysis and it gets booked up quickly. Please plan ahead!</p>
 
-                    <h3 id="links" style="margin-top: 4rem;">Useful Links</h3>
-                    <p><a href="https://kidneycareuk.org">Kidney Care UK</a> has a wide range of useful fact sheets and leaflets for kidney patients.</p>
-                    <p><a href="https://www.nhs.uk/conditions/dialysis/">NHS Dialysis</a> offers information about dialysis on the NHS.</p>
-                    <p><a href="https://www.gov.uk/browse/benefits/disability">GOV.UK carers and disability benefits</a> that kidney patients may be entitled to.</p>
-                    <p><a href="https://www.iwight.com/Residents/care-and-Support/Adults-Services/">Isle of Wight Social Services</a> has details of adult care services provided by our local authourity.</p>
-                    <p><a href="https://www.citizensadvice.org.uk/">Citizens Advice</a> is the national provider of free information and advice.</p>
-                </div>
+
+    <footer class="mt-12 w-full bg-blue-900 text-sm">
+        <div class="flex flex-wrap text-center text-gray-500">
+            <div class="w-full md:w-1/3 p-5 md:text-left">
+                <h2 class="uppercase text-teal-500 font-semibold text-lg mb-4">Contact Us</h2>
+                Ann Daly<br/>
+                <span class="font-semibold">Phone:</span> 01983 611671<br/>
+                <span class="font-semibold">Email:</span> <a class="underline hover:text-gray-300" href="mailto:iwkpacontact@gmail.com">iwkpacontact@gmail.com</a>
+            </div>
+            <div class="w-full md:w-1/3 p-5">
+                Made with ❤ by <a class="underline hover:text-gray-300" href="https://matthewcapewell.me">Matt</a>
+            </div>
+            <div class="w-full md:w-1/3 p-5 md:text-right">
+                Registered Charity Number: 298041
             </div>
         </div>
+    </footer>
+    <script>
+        let hamburgerBtn = document.getElementById('hamburgerBtn');
+        let hamburgerSvg = document.getElementById('hamburgerSvg');
+        let closeSvg = document.getElementById('closeSvg');
+        let mobileMenu = document.getElementById('mobileMenu');
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-85920735-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-    </body>
+        hamburgerBtn.addEventListener('click', function() {
+            hamburgerSvg.classList.toggle('block');
+            hamburgerSvg.classList.toggle('hidden');
+            closeSvg.classList.toggle('block');
+            closeSvg.classList.toggle('hidden');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
 </html>
