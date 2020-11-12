@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "postcss css/styles.css -o build/styles.css",
+    "cleancss": "cleancss -o build/styles.min.css build/styles.css",
     "watch": "postcss css/styles.css -o build/styles.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
