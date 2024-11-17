@@ -1127,22 +1127,10 @@ video {
   background-color: rgba(42, 67, 101, var(--bg-opacity));
 }
 
-.bg-pink-100 {
-  --bg-opacity: 1;
-  background-color: #fff5f7;
-  background-color: rgba(255, 245, 247, var(--bg-opacity));
-}
-
 .bg-pink-600 {
   --bg-opacity: 1;
   background-color: #d53f8c;
   background-color: rgba(213, 63, 140, var(--bg-opacity));
-}
-
-.hover\:bg-white:hover {
-  --bg-opacity: 1;
-  background-color: #fff;
-  background-color: rgba(255, 255, 255, var(--bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1191,16 +1179,8 @@ video {
   cursor: default;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .block {
   display: block;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .flex {
@@ -1247,16 +1227,8 @@ video {
   font-weight: 600;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .h-1 {
   height: 0.25rem;
-}
-
-.h-5 {
-  height: 1.25rem;
 }
 
 .h-6 {
@@ -1300,16 +1272,8 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
 }
 
 .mr-5 {
@@ -1367,11 +1331,6 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1380,16 +1339,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .px-8 {
@@ -1444,18 +1393,6 @@ video {
   --text-opacity: 1;
   color: #38b2ac;
   color: rgba(56, 178, 172, var(--text-opacity));
-}
-
-.text-pink-100 {
-  --text-opacity: 1;
-  color: #fff5f7;
-  color: rgba(255, 245, 247, var(--text-opacity));
-}
-
-.text-pink-600 {
-  --text-opacity: 1;
-  color: #d53f8c;
-  color: rgba(213, 63, 140, var(--text-opacity));
 }
 
 .hover\:text-gray-300:hover {
@@ -2219,14 +2156,6 @@ video {
     display: block;
   }
 
-  .lg\:text-base {
-    font-size: 1rem;
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-  }
-
   .lg\:mt-12 {
     margin-top: 3rem;
   }
@@ -2248,11 +2177,6 @@ video {
   .lg\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-
-  .lg\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
   .lg\:grid-cols-12 {
