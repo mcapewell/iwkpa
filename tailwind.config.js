@@ -1,17 +1,14 @@
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
-  purge: {
-    enabled: true,
-    mode: 'layers',
-    content: ['./*.html'],
-  },
+  content: [
+    './*.html',
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#2a4365',
+      },
+    },
   },
-  variants: {},
   plugins: [
     require('@tailwindcss/typography'),
   ],
